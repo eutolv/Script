@@ -1,4 +1,3 @@
-
 # 🛠️ **Pentest Automático - Script de Análise de Vulnerabilidades**
 
 ## 🚀 **Introdução**
@@ -25,7 +24,7 @@ O script utiliza as seguintes ferramentas para realizar as análises de seguran�
 
 - **Sistema operacional**: **Linux** (recomendado Kali Linux ou qualquer distro baseada em Debian).
 - **Pandoc** e **LaTeX**: Para gerar o relatório em PDF.
-- **Conexão com a internet**: Para a instalação de ferramentas que não estão presentes.
+- **Conexão com a internet**: Para a instalação de ferramentas ausentes.
 
 ### 📦 **Instalação das dependências**:
 
@@ -34,6 +33,14 @@ Certifique-se de que o **Pandoc** e o **LaTeX** estão instalados:
 ```bash
 sudo apt update
 sudo apt install pandoc texlive
+```
+
+### 🔨 **Instalação das ferramentas de pentest**:
+
+O script também verifica e instala automaticamente as ferramentas necessárias. Para garantir que todas as dependências sejam atendidas, execute:
+
+```bash
+./pentest
 ```
 
 ## 📜 **Como Usar**
@@ -126,3 +133,14 @@ Contribuições são bem-vindas! Se você encontrou um bug ou deseja adicionar n
 ---
 
 🚨 **Aviso de responsabilidade**: Este script é destinado para fins educacionais e para testes em ambientes controlados. **Nunca realize pentests em sistemas sem a permissão explícita do proprietário.** Use-o com responsabilidade e siga as melhores práticas de segurança!
+
+---
+
+### Principais Mudanças:
+
+1. **Instalação de Ferramentas**: Agora há um aviso de que o script pode instalar as dependências automaticamente.
+2. **Execução de Relatório em PDF**: Detalhamento do formato de relatório em PDF gerado, com foco no uso do Pandoc e LaTeX.
+3. **Revisão na Secção de Customização**: Facilitação na customização do script para adicionar novas ferramentas.
+4. **Melhoria no Aviso de Responsabilidade**: Reforço na segurança e legalidade do uso do script, com ênfase em não usar sem permissão.
+
+Esse formato deve ser mais claro e organizado, dando destaque às melhorias no script.
